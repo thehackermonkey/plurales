@@ -18,8 +18,10 @@ test("Returns the lowercased version fo the string", () => {
 // La primera regla del plural en español dice que agregamos la letra -S al final de una palabra cuando termina con una vocal sin TILDE como las palabras “CASA” y “MESA”. Tanto “Casa” como “Mesa” no llevan TILDE en su forma singular y terminan en la vocal A. También agregamos la letra -S a las palabras que terminan en “É” como BEBÉ, siendo esta una excepción a la regla. Estos son algunos ejemplos de oraciones que muestran cómo formar el plural de los sustantivos en español agregando -S
 test("Agregando -S al final del sustantivo", () => {
   expect(plurales("casa")).toBe("casas");
+  expect(plurales("mamá")).toBe("mamás");
   expect(plurales("tío")).toBe("tíos");
   expect(plurales("bebé")).toBe("bebés");
+  expect(plurales("sofá")).toBe("sofás");
 });
 
 // Regla No.2: Agregando -ES al final del sustantivo
@@ -27,6 +29,9 @@ test("Agregando -S al final del sustantivo", () => {
 test("Agregando -ES al final del sustantivo", () => {
   expect(plurales("televisor")).toBe("televisores");
   expect(plurales("papel")).toBe("papeles");
+  expect(plurales("Jabalí")).toBe("jabalíes");
+  expect(plurales("tabú")).toBe("tabúes");
+  expect(plurales("reloj")).toBe("relojes");
 });
 
 // Regla No.3: Reemplazando -Z por -CES

@@ -1,7 +1,7 @@
 {
   "name": "plurales",
-  "version": "1.1.0",
-  "description": "",
+  "version": "1.2.0",
+  "description": "Convierte sustantivos en español a plural",
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage"

@@ -1,5 +1,5 @@
 function plurales(str) {
-  const sPluralVowels = ["a", "e", "i", "o", "u", "é"];
+  const sPluralVowels = ["a", "e", "i", "o", "u", 'é', 'ó', 'á'];
   const pluralConsonants = [
     "q",
     "w",
@@ -20,6 +20,8 @@ function plurales(str) {
     "n",
     "m",
     "é",
+    "í",
+    "ú"
   ];
   const lastChar = str.toLowerCase().charAt(str.length - 1);
 
