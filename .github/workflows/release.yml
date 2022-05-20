@@ -37,6 +37,5 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         with:
           extra_plugins: |
-            @semantic-release/changelog@3.0.0
             @semantic-release/git
             @semantic-release/npm
