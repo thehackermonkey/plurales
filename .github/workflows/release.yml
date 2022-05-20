@@ -28,7 +28,8 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v3
           env:
