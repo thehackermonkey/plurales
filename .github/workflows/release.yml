@@ -1,5 +1,11 @@
 name: Release repo
 
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+  deployments: write
+
 on:
   push:
     branches: [ main ]
